@@ -12,6 +12,7 @@ cloudinary.config({
 });
 const cors = require("cors");
 
+app.set("trust proxy", 1);
 app.use(cors());
 
 app.use(express.json());
